@@ -1,29 +1,42 @@
 import React, { Component } from 'react';
-import { animated, useSpring } from 'react-spring';
-import { useState } from 'react';
+import { useInView } from 'react-intersection-observer';
 
-class Header extends Component {
-    render() {
+
+
+function Header() {
+
+    const { ref, inView} = useInView({
+        threshold: [0],
+        initialInView: true,
+        // rootMargin: '-50%'
+      });
+
+      const [ref2, inView2 ] = useInView( {
+
+      })
+   
     return (
-      <header className="header">
-        <nav id="nav-wrapper">
-          <ul id="nav">
-            <li className="btn-2">
-              <a className="scroll" href="#home">
+      <header ref={ref} className="header">
+        <nav id="nav-wrap" className={inView ? '' : 'nav-background'}>
+
+       
+          <ul id="nav" className={inView2 ? 'navHidden' : "nav"}>
+            <li className="btn">
+              <a className="scroll" href="#header">
                 Home
               </a>
             </li>
-            <li>
+            <li className="btn">
               <a className="scroll" href="#projects">
                 Projects
               </a>
             </li>
-            <li>
+            <li className="btn">
               <a className="scroll" href="#about">
                 About
               </a>
             </li>
-            <li>
+            <li className="btn">
               <a className="Contact" href="#contact">
                 Contact
               </a>
@@ -37,9 +50,10 @@ class Header extends Component {
 
           </div>
         </div>
+        <span ref={ref2} className='stickBottom'></span>
       </header>
     );
     }
-}
+
 
 export default Header;

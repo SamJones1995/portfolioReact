@@ -1,8 +1,15 @@
-import React, { Component } from 'react';
+import React, { Component} from 'react';
+import { useInView } from 'react-intersection-observer';
 
-class Projects extends Component {
-    render() {
+function Projects() {
 
+    
+        const { ref, inView} = useInView({
+            triggerOnce: true,
+            threshold: 0,
+          });
+  
+          
     
 
     return (
@@ -10,7 +17,7 @@ class Projects extends Component {
             <div className='row'>
                 
                     <h1>Check out some of my code</h1>
-                    <div id="projects-wrapper">
+                    <div ref={ref} className={inView ? "projects-wrapper-animate" : "projects-wrapper"}>
                         <ul>
                         <li className='item-wrap'>
                             <a href=''>
@@ -68,7 +75,7 @@ class Projects extends Component {
 
         </section>
     );
-}
+
 }
 
 export default Projects
