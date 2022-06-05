@@ -173,7 +173,7 @@ ul#nav li.current a { color: #F06000; animation-name: current; animation-duratio
   padding-bottom: 60px;
   padding-left: 50px;
   padding-right: 50px;
-  height: 800px;
+  min-height: 800px;
 }
 
 #projects h1 {
@@ -242,8 +242,9 @@ ul#nav li.current a { color: #F06000; animation-name: current; animation-duratio
   text-align: center;
   justify-content: center;
   
-  display: flex;
- 
+  display: grid;
+  /* grid-template-columns: 1fr 1fr; */
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
  padding-top: 90px;
   padding-bottom: 60px;
   padding-left: 50px;
@@ -258,6 +259,16 @@ ul#nav li.current a { color: #F06000; animation-name: current; animation-duratio
   text-align: center;
   margin-bottom: 48px;
   color: #95A3A3;
+}
+
+.row-skills {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.row-education {
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .bar-header {
@@ -275,7 +286,7 @@ ul#nav li.current a { color: #F06000; animation-name: current; animation-duratio
   padding: 0 5px;
   display: flex;
   height: 40px;
-  width: 500px;
+  /* width: 500px; */
    border: 1px;
   border-color: white;
 }
@@ -374,4 +385,28 @@ ul#nav li.current a { color: #F06000; animation-name: current; animation-duratio
 @keyframes angularjs{
   0% { width: 0; }
   100% { width: 65%; }
+}
+
+/* About
+---------------------------------*/
+.about {
+  text-align: center;
+  justify-content: center;
+  
+  display: grid;
+  /* grid-template-columns: 1fr 1fr; */
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+ padding-top: 90px;
+  padding-bottom: 60px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+
+.about-img {
+    
+    width: 250px;
+    align-items: center;
+    border-radius: 50%;
+  
 }
