@@ -18,10 +18,10 @@ function Projects() {
                 
                     <h1>Check out some of my code</h1>
                     <div ref={ref} className={inView ? "projects-wrapper-animate" : "projects-wrapper"}>
-                        <ul>
+                        <ul className='projects-list'>
                         <li className='item-wrap'>
                             <a href=''>
-                                <img alt='' src='images/myHorror.png'></img>
+                                <img alt='project-image' className='project-image' src='images/myHorror.png'></img>
                                 <div className='overlay'>
                                     <div className='projects-item'>
                                         <h5>Project</h5>
@@ -35,7 +35,7 @@ function Projects() {
                     
                         <li className='item-wrap'>
                             <a href=''>
-                                <img alt='' src='images/myHorror.png'></img>
+                                <img alt='project-image' className='project-image' src='images/myHorror.png'></img>
                                 <div className='overlay'>
                                     <div className='projects-item'>
                                         <h5>Project</h5>
@@ -47,7 +47,7 @@ function Projects() {
 
                         <li className='item-wrap'>
                             <a href=''>
-                                <img alt='' src='images/myHorror.png'></img>
+                                <img alt='project-image' className='project-image' src='images/myHorror.png'></img>
                                 <div className='overlay'>
                                     <div className='projects-item'>
                                         <h5>Project</h5>

@@ -194,16 +194,21 @@ ul#nav li.current a { color: #F06000; animation-name: current; animation-duratio
   /* gap: 50px; */
 }
 
+.projects-list {
+  padding: 0;
+  
+}
+
 .projects-wrapper-animate > ul { 
   margin: 0;
   /* text-align: center; */
 
-  
+  /* justify-items: center; */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 2rem;
-  padding-left: 0;
-  animation: slidein 5s;
+  /* padding-left: 0; */
+  animation: slidein 2s;
   animation-fill-mode: forwards;
  
   transition-timing-function: ease-in;
@@ -236,6 +241,13 @@ ul#nav li.current a { color: #F06000; animation-name: current; animation-duratio
   }
 }
 
+@media only screen and (max-width: 420px) {
+  .projects-wrapper-animate > ul {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+  
+}
+
 /* Skills
 -----------------------------------*/
 #skills {
@@ -249,7 +261,7 @@ ul#nav li.current a { color: #F06000; animation-name: current; animation-duratio
   padding-bottom: 60px;
   padding-left: 50px;
   padding-right: 50px;
-  height: 800px;
+  min-height: 800px;
 }
 
 .skills-header {
@@ -266,9 +278,33 @@ ul#nav li.current a { color: #F06000; animation-name: current; animation-duratio
   padding-right: 25px;
 }
 
-.row-education {
-  margin-left: 50px;
-  margin-right: 50px;
+
+.education-img {
+  max-width: 500px;
+  max-height: 200px;
+  padding: 0px 25px;
+  position: relative;
+  right: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.responsive-img {
+  position: relative;
+  right: 50px;
+  margin-top: 24px;
+  width: 100%;
+  height: auto;
+  padding: 0px 25px 0px;
+}
+
+.education-text {
+  text-align: left;
+  /* margin-left: 35px; */
+  padding: 0px 25px;
+}
+
+.education-content {
+  padding: 0px 25px;
 }
 
 .bar-header {
@@ -409,4 +445,42 @@ ul#nav li.current a { color: #F06000; animation-name: current; animation-duratio
     align-items: center;
     border-radius: 50%;
   
+}
+
+/* Contact
+--------------------------------------*/
+
+#contact {
+  text-align: center;
+  justify-content: center;
+  
+  display: grid;
+  /* grid-template-columns: 1fr 1fr; */
+  
+ padding-top: 90px;
+  padding-bottom: 60px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.contact-text {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.contact-left {
+  list-style-type:none;
+  text-align: left;
+  
+}
+
+.contact-right {
+  list-style-type:none;
+  text-align: left;
+}
+
+.contact-block {
+  display: inline-block;
+  flex: 1;
 }
