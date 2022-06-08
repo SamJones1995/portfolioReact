@@ -248,6 +248,82 @@ ul#nav li.current a { color: #F06000; animation-name: current; animation-duratio
   
 }
 
+/* Modal
+--------------------------------------------------------------------------------------------*/
+
+.overlay-base {
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0);
+  opacity: 0;
+  /* transition-property: background-color, opacity;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out; */
+
+  transition: all 0.75s;
+  outline: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-after {
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 1;
+}
+
+.overlay-before {
+  background-color: rgba(0, 0, 0, 0);
+  opacity: 0;
+}
+
+.content-base {
+  position: relative;
+  
+  top: auto;
+  left: auto;
+  right: auto;
+  bottom: auto;
+ 
+  margin: 0 auto;
+  border: 0;
+  border-radius: 1rem;
+  outline: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 500px;
+  /* background-color: transparent;
+  transition-property: background-color, width, height;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out; */
+}
+
+.content-after {
+  width: 800;
+  height: 800;
+  background-color: rgba(250, 190, 190, 0.8);
+}
+
+.content-before {
+  width: 11%;
+  height: 0%;
+  background-color: transparent;
+}
+
+.modal-close {
+  position: relative;
+  top: -70px;
+  right: 5px;
+  background-color: #F06000;
+  /* z-index: 99; */
+}
+
 /* Skills
 -----------------------------------*/
 #skills {
@@ -262,6 +338,7 @@ ul#nav li.current a { color: #F06000; animation-name: current; animation-duratio
   padding-left: 50px;
   padding-right: 50px;
   min-height: 800px;
+  z-index: -1;
 }
 
 .skills-header {
@@ -286,6 +363,7 @@ ul#nav li.current a { color: #F06000; animation-name: current; animation-duratio
   position: relative;
   right: 40px;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  z-index: -1;
 }
 
 .responsive-img {
@@ -295,12 +373,14 @@ ul#nav li.current a { color: #F06000; animation-name: current; animation-duratio
   width: 100%;
   height: auto;
   padding: 0px 25px 0px;
+  z-index: -1;
 }
 
 .education-text {
   text-align: left;
   /* margin-left: 35px; */
   padding: 0px 25px;
+  
 }
 
 .education-content {
@@ -325,6 +405,7 @@ ul#nav li.current a { color: #F06000; animation-name: current; animation-duratio
   /* width: 500px; */
    border: 0.25px;
   border-color: white;
+  z-index: -1;
 }
 
 .progress-html {
@@ -336,6 +417,7 @@ ul#nav li.current a { color: #F06000; animation-name: current; animation-duratio
   width: 0;
    border: 1px;
   border-color: white;
+  z-index: 1;
 }
 
 @keyframes html {
