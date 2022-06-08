@@ -319,11 +319,11 @@ ul#nav li.current a { color: #F06000; animation-name: current; animation-duratio
   border-radius: 100px;
   align-items: center;
   position: relative;
-  padding: 0 5px;
+  padding: 0 2px;
   display: flex;
   height: 40px;
   /* width: 500px; */
-   border: 1px;
+   border: 0.25px;
   border-color: white;
 }
 
@@ -332,7 +332,7 @@ ul#nav li.current a { color: #F06000; animation-name: current; animation-duratio
   box-shadow: 0 10px 40px -10px #fff;
   border-radius: 100px;
   background: #fff;
-  height: 30px;
+  height: 36px;
   width: 0;
    border: 1px;
   border-color: white;
@@ -348,7 +348,7 @@ ul#nav li.current a { color: #F06000; animation-name: current; animation-duratio
   box-shadow: 0 10px 40px -10px #fff;
   border-radius: 100px;
   background: #fff;
-  height: 30px;
+  height: 36px;
   width: 0;
    border: 1px;
   border-color: white;
@@ -364,7 +364,7 @@ ul#nav li.current a { color: #F06000; animation-name: current; animation-duratio
   box-shadow: 0 10px 40px -10px #fff;
   border-radius: 100px;
   background: #fff;
-  height: 30px;
+  height: 36px;
   width: 0;
    border: 1px;
   border-color: white;
@@ -380,7 +380,7 @@ ul#nav li.current a { color: #F06000; animation-name: current; animation-duratio
   box-shadow: 0 10px 40px -10px #fff;
   border-radius: 100px;
   background: #fff;
-  height: 30px;
+  height: 36px;
   width: 0;
    border: 1px;
   border-color: white;
@@ -396,7 +396,7 @@ ul#nav li.current a { color: #F06000; animation-name: current; animation-duratio
   box-shadow: 0 10px 40px -10px #fff;
   border-radius: 100px;
   background: #fff;
-  height: 30px;
+  height: 36px;
   width: 0;
    border: 1px;
   border-color: white;
@@ -412,7 +412,7 @@ ul#nav li.current a { color: #F06000; animation-name: current; animation-duratio
   box-shadow: 0 10px 40px -10px #fff;
   border-radius: 100px;
   background: #fff;
-  height: 30px;
+  height: 36px;
   width: 0;
    border: 1px;
   border-color: white;
@@ -454,9 +454,9 @@ ul#nav li.current a { color: #F06000; animation-name: current; animation-duratio
   text-align: center;
   justify-content: center;
   
-  display: grid;
+  /* display: grid; */
   /* grid-template-columns: 1fr 1fr; */
-  
+
  padding-top: 90px;
   padding-bottom: 60px;
   padding-left: 50px;
@@ -465,14 +465,14 @@ ul#nav li.current a { color: #F06000; animation-name: current; animation-duratio
 
 .contact-text {
   display: flex;
-  text-align: center;
   align-items: center;
+  justify-content: center;
+  
 }
 
 .contact-left {
   list-style-type:none;
   text-align: left;
-  
 }
 
 .contact-right {
@@ -483,4 +483,27 @@ ul#nav li.current a { color: #F06000; animation-name: current; animation-duratio
 .contact-block {
   display: inline-block;
   flex: 1;
+  max-width: fit-content;
+}
+
+.footer {
+  background-color: gray;
+  text-align: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+.icon-img {
+    padding: 10px;
+    max-width: 30px;
+    max-height: 30px;
+   
+
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  
+}
+
+.icon-img:hover {
+  transition: 0.5s;
+  fill: white;
 }
