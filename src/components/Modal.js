@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import { motion, AnimatePresence } from "framer-motion";
+import React from 'react';
+import styled from 'styled-components';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const Overlay = styled(motion.div)`
   position: fixed;
@@ -11,8 +11,8 @@ const Overlay = styled(motion.div)`
   background: rgba(0, 0, 0, 0.3);
 `;
 const ModalContainer = styled(motion.div)`
-  width: 50%;
-  height: 50%;
+  width: 70%;
+  height: fitcontent;
   background-color: white;
   position: relative;
   top: 50%;
@@ -20,6 +20,7 @@ const ModalContainer = styled(motion.div)`
   transform: translate(-50%, -50%);
   border-radius: 12px;
   z-index: 99;
+  text-align: center;ewa
 `;
 const CloseButton = styled.svg`
   width: 20px;
@@ -33,24 +34,30 @@ const CloseButton = styled.svg`
 const modalVariant = {
   initial: { opacity: 0 },
   isOpen: { opacity: 1 },
-  exit: { opacity: 0 }
+  exit: { opacity: 0 },
 };
 const containerVariant = {
-  initial: { top: "-50%", transition: { type: "spring" } },
-  isOpen: { top: "50%" },
-  exit: { top: "-50%" }
+  initial: { top: '-50%', transition: { type: 'spring' } },
+  isOpen: { top: '50%' },
+  exit: { top: '-50%' },
 };
-const Modal = ({ handleClose, children, isOpen, modalContent }) => {
+
+
+
+const Modal = ({ handleClose, isOpen, modalContent }) => {
+
   return (
     <AnimatePresence>
       {isOpen && (
         <Overlay
-          initial={"initial"}
-          animate={"isOpen"}
-          exit={"exit"}
+        onClick={handleClose}
+          initial={'initial'}
+          animate={'isOpen'}
+          exit={'exit'}
           variants={modalVariant}
         >
-          <ModalContainer variants={containerVariant}>
+          <ModalContainer variants={containerVariant} onClick={e => e.stopPropagation()}>
+          
             <CloseButton
               onClick={handleClose}
               xmlns="http://www.w3.org/2000/svg"
@@ -80,11 +87,22 @@ const Modal = ({ handleClose, children, isOpen, modalContent }) => {
                 strokeWidth="2"
               />
             </CloseButton>
-            
-            <div>
-          <h1>Modal</h1>
-          <p>{modalContent.title}, {modalContent.description}</p>
-        </div>
+
+            <div className="modal-container">
+              <h1 className="modal-header">{modalContent.title}</h1>
+              <img className="modal-image" src={modalContent.imgSrc} />
+              <div>
+                <a className="projects-link" target="_blank" href={modalContent.liveLink}>
+                  See live project
+                </a>
+              </div>
+              <div>
+                <a className="projects-link" target="_blank" href={modalContent.gitLink}>
+                  See project on Github
+                </a>
+              </div>
+              <p className="modal-body">{modalContent.description}</p>
+            </div>
           </ModalContainer>
         </Overlay>
       )}

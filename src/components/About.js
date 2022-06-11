@@ -17,7 +17,9 @@ function About() {
       </figure>
       <div className='about-text'>
         <h1 className='about-title'>Here's a little more about me</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum risus mi, et cursus arcu pulvinar eu. Aenean ut ex consequat, vehicula elit eu, hendrerit purus. Integer scelerisque fermentum sodales. Duis facilisis rhoncus pellentesque. Cras risus nisl, tristique id congue quis, convallis nec urna. Praesent placerat lorem nunc, id lacinia odio commodo in. Maecenas id lorem quis nibh accumsan maximus in quis erat. Proin molestie diam consequat, bibendum dui tincidunt, fringilla neque. Nullam pharetra faucibus quam, sodales finibus ipsum ultrices quis. Integer a ante venenatis, vulputate augue nec, egestas orci. Suspendisse accumsan purus bibendum sollicitudin finibus. Nullam felis lacus, sodales ac fermentum a, faucibus ac magna.</p>
+        <p>I've spent my whole life learning. My interests range from tech and software engineering to history to hiking and spending as much time outdoors as I can. The picture above I took while thru hiking 2,000 miles across the United States. 
+          I love to learn and I specifically love to learn while doing. In my professional life I've strived to learn as quickly as possible to become someone an employer or client can depend on through thick and thin.
+        </p>
       </div>
     </section>
   )
