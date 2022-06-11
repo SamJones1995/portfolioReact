@@ -42,22 +42,21 @@ const containerVariant = {
   exit: { top: '-50%' },
 };
 
-
-
 const Modal = ({ handleClose, isOpen, modalContent }) => {
-
   return (
     <AnimatePresence>
       {isOpen && (
         <Overlay
-        onClick={handleClose}
+          onClick={handleClose}
           initial={'initial'}
           animate={'isOpen'}
           exit={'exit'}
           variants={modalVariant}
         >
-          <ModalContainer variants={containerVariant} onClick={e => e.stopPropagation()}>
-          
+          <ModalContainer
+            variants={containerVariant}
+            onClick={(e) => e.stopPropagation()}
+          >
             <CloseButton
               onClick={handleClose}
               xmlns="http://www.w3.org/2000/svg"
@@ -92,12 +91,20 @@ const Modal = ({ handleClose, isOpen, modalContent }) => {
               <h1 className="modal-header">{modalContent.title}</h1>
               <img className="modal-image" src={modalContent.imgSrc} />
               <div>
-                <a className="projects-link" target="_blank" href={modalContent.liveLink}>
+                <a
+                  className="projects-link"
+                  target="_blank"
+                  href={modalContent.liveLink}
+                >
                   See live project
                 </a>
               </div>
               <div>
-                <a className="projects-link" target="_blank" href={modalContent.gitLink}>
+                <a
+                  className="projects-link"
+                  target="_blank"
+                  href={modalContent.gitLink}
+                >
                   See project on Github
                 </a>
               </div>

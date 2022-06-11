@@ -16,8 +16,15 @@ function App() {
   return (
     <div className="app">
       <Header />
-      <Projects setModalVisible={setModalVisible} setModalContent={setModalContent}/>
-      <Modal isOpen={modalVisible} handleClose={() => setModalVisible(false)} modalContent={modalContent} />
+      <Projects
+        setModalVisible={setModalVisible}
+        setModalContent={setModalContent}
+      />
+      <Modal
+        isOpen={modalVisible}
+        handleClose={() => setModalVisible(false)}
+        modalContent={modalContent}
+      />
       <Skills />
       <About />
       <Contact />
