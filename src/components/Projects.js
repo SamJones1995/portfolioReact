@@ -58,7 +58,7 @@ function Projects(props) {
       'Frontend client for my movie_api built using Angular. It has all the same functionality as the React version with a different build and style.',
     liveLink: 'https://samjones1995.github.io/myHorror-Angular-Client/login',
     gitLink: 'https://github.com/SamJones1995/myHorror-Angular-Client',
-    imgSrc: 'images/myHorrorAngular.png',
+    imgSrc: 'images/MyHorrorAngular.png',
   };
 
   const handleClick = (event, value) => {
