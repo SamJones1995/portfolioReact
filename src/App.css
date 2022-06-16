@@ -314,7 +314,7 @@ bottom:   0;
 }
 
 .team-blurb {
-  margin-top: 5%;
+  margin-top: 50px;
   font-size: large;
 }
 
@@ -697,6 +697,7 @@ a[href="mobile-chat.png"] {
 }
 
 .contact-text {
+  font-size: 15px;
   display: flex;
   align-items: center;
   justify-content: center;

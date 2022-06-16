@@ -8,7 +8,7 @@ function Contact() {
         Want to get in touch? Great! I am most reachable by email but feel free
         to contact me through any of the below methods.
       </h3>
-      <div class="contact-text">
+      <div className="contact-text">
         <div className="contact-block">
           <ul className="contact-left">
             <li>Sam Jones</li>

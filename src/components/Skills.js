@@ -22,9 +22,10 @@ function Skills() {
 
             <p>
               My foreray into higher education was completed online in March of
-              2020. I left high school with an interest in aviation but training
-              costs and the rigid lifestyle requirements eventually led me to
-              take another path into tech. Regardless I completed the degree and
+              2020. I still have a love for aviation as well as tech. The two fields
+              are remarkably similar in that discipline and attention to detail will 
+              take you a long way. One missed quotation or comma can be just as important
+              as a miscalculated flight plan. Regardless I completed the degree with flying colors and
               am still very knowledgeable in the field and industry of aviation.
             </p>
           </div>
