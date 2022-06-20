@@ -68,7 +68,8 @@ function Projects(props) {
   };
 
   return (
-    <section id="projects">
+    <section >
+      <div id="projects">
       <div className="row">
         <h1>Check out some of my code</h1>
         <div
@@ -196,6 +197,10 @@ function Projects(props) {
           Looking for a team player? Check out my work with my open source{' '}
           <a target='_blank' href="https://github.com/web-dev-incubator-org">coding team!</a>
         </h1>
+      </div>
+      </div>
+      <div style={{padding: '0 50px'}}>
+      <hr className='displayLine'/>
       </div>
     </section>
   );

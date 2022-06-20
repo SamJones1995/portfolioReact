@@ -4,7 +4,7 @@ function Footer() {
   // <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
   return (
     <footer className="footer">
-      <div className="icons-containter">
+      <div className="icons-container">
         <a href="https://github.com/SamJones1995" target="_blank">
           <svg
             className="icon-img"
@@ -36,6 +36,13 @@ function Footer() {
             <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
           </svg>
         </a>
+      </div>
+      <div className='copywright-container'>
+        <p className='copywrightText'>	&copy; Copyright 2022</p>
+        <p className='copywrightText'>Designed by Sam Jones</p>
+        <a  href="#home">
+        <svg className="iconUp-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 0C114.6 0 0 114.6 0 256c0 141.4 114.6 256 256 256s256-114.6 256-256C512 114.6 397.4 0 256 0zM390.6 310.6c-12.5 12.5-32.75 12.5-45.25 0L256 221.3L166.6 310.6c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l112-112C239.6 147.1 247.8 144 256 144s16.38 3.125 22.62 9.375l112 112C403.1 277.9 403.1 298.1 390.6 310.6z"/></svg>
+            </a>
       </div>
     </footer>
   );

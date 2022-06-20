@@ -8,7 +8,8 @@ function Skills() {
   });
 
   return (
-    <section ref={ref} id="skills">
+    <section>
+      <div ref={ref} id="skills">
       <div className="row education">
         <h1 className="skills-header">
           <span>Education</span>
@@ -44,10 +45,15 @@ function Skills() {
               and my peers I managed to complete the course projects (with my
               own personal spins) and earn my certificate.
             </p>
+            
           </div>
+          
         </div>
+        
       </div>
+      
       <div className="row skill">
+        
         <h1 className="skills-header">
           <span>Skills</span>
         </h1>
@@ -75,6 +81,10 @@ function Skills() {
         <div className="progress">
           <div className={inView ? 'progress-angularjs' : ''}></div>
         </div>
+      </div>
+      </div>
+      <div style={{padding: '0 50px'}}>
+      <hr className='displayLine'/>
       </div>
     </section>
   );

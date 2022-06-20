@@ -25,8 +25,11 @@ function App() {
         handleClose={() => setModalVisible(false)}
         modalContent={modalContent}
       />
+      
       <Skills />
+      
       <About />
+      
       <Contact />
       <Footer />
     </div>

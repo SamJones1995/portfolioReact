@@ -8,7 +8,8 @@ function About() {
   });
 
   return (
-    <section id="about" className="about">
+    <section style={{padding: '0 50px'}}>
+      <div id="about" className="about">
       <figure className="about-img-container">
         <img className="about-img" src="images/portrait.jpg" />
       </figure>
@@ -24,6 +25,8 @@ function About() {
           can depend on through thick and thin.
         </p>
       </div>
+      </div>
+      <hr className='displayLine'/>
     </section>
   );
 }

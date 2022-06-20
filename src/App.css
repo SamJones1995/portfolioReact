@@ -193,6 +193,16 @@ ul#nav li.current a { color: #F06000; animation-name: current; animation-duratio
   }
 }
 
+.displayLine {
+  display: block;
+  width: 100%;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: auto;
+  
+}
+
 
 /* Projects
 ---------------------------------------------*/
@@ -521,6 +531,25 @@ a[href="mobile-chat.png"] {
   padding: 0px 5px;
 }
 
+.skillsLine{
+  
+    display: none;
+  }
+
+  @media only screen and (max-width: 740px) {
+    .skillsLine {
+    display: block;
+    
+    margin: 40px 0 !important;
+    height: 1px;
+    width: 100%;
+    border: 0;
+    border-top: 1px solid #ccc;
+   
+    padding: 0;
+    }
+  }
+
 .bar-header {
   font-family: 'Raleway', sans-serif;
   text-align: left;
@@ -723,10 +752,12 @@ a[href="mobile-chat.png"] {
 }
 
 .footer {
-  background-color: gray;
+
+  
+  
   text-align: center;
   justify-content: center;
-  padding: 50px;
+  /* padding: 50px; */
 }
 
 .icon-img {
@@ -739,7 +770,40 @@ a[href="mobile-chat.png"] {
 
 }
 
+.iconUp-img {
+  padding: 10px;
+  max-width: 30px;
+  max-height: 30px;
+  fill: white;
+  margin-top: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+}
+
+.iconUp-img:hover {
+  transition: 0.5s;
+  fill: #7FA1DE;
+}
+
+.icons-container {
+  padding: 30px;
+}
+
 .icon-img:hover {
   transition: 0.5s;
   fill: white;
+}
+
+.copywright-container {
+  
+  background-color: black;
+  padding: 40px;
+  justify-content: center;
+  
+}
+
+.copywrightText {
+  color: white;
+  margin: 5px auto;
+  
 }
