@@ -11,7 +11,7 @@ function About() {
     <section style={{padding: '0 50px'}}>
       <div id="about" className="about">
       <figure className="about-img-container">
-        <img className="about-img" src="images/portrait.jpg" />
+        <img className="about-img" src="images/pic2-crop.jpg" />
       </figure>
       <div className="about-text">
         <h1 className="about-title">Here's a little more about me</h1>

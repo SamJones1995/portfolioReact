@@ -45,7 +45,7 @@ function Header() {
           <h1 className="headline">I'm Sam, lets move mountains.</h1>
           <h3>
             {' '}
-            I'm a Roanoke, VA based web developer here to solve your problems.
+            I'm a software guru currently working in Houston, TX.
           </h3>
           <div className="icons-containter">
             <a href="https://github.com/SamJones1995" target="_blank">

@@ -203,6 +203,33 @@ ul#nav li.current a { color: #F06000; animation-name: current; animation-duratio
   
 }
 
+/* Job
+---------------------------------------------*/
+
+#job {
+  
+  font-family: 'Lusitana', serif;
+  text-align: center;
+  justify-content: center;
+
+  display: grid;
+  /* grid-template-columns: 1fr 1fr; */
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+ padding-top: 90px;
+  padding-bottom: 60px;
+  padding-left: 50px;
+  padding-right: 50px;
+  
+}
+
+.job-img {
+
+  width: 250px;
+  align-items: center;
+  border-radius: 50%;
+
+}
+
 
 /* Projects
 ---------------------------------------------*/

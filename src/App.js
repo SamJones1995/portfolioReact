@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import React, { useState } from 'react';
 import Header from './components/Header';
+import Job from './components/Job';
 import Projects from './components/Projects';
 import Modal from './components/Modal';
 import Skills from './components/Skills';
@@ -16,6 +17,7 @@ function App() {
   return (
     <div className="app">
       <Header />
+      <Job />
       <Projects
         setModalVisible={setModalVisible}
         setModalContent={setModalContent}

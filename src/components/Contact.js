@@ -12,8 +12,8 @@ function Contact() {
         <div className="contact-block">
           <ul className="contact-left">
             <li>Sam Jones</li>
-            <li>111B Dogwood Hill Rd</li>
-            <li>Boones Mill, VA</li>
+            <li>10100 Main St</li>
+            <li>Houston, TX</li>
             <li>United States</li>
           </ul>
         </div>
